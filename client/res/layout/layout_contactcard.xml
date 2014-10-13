@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp" >
+
+        <ImageView
+            android:id="@+id/userprofilepic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/default_profile_pic_list" />
+
+        <TextView
+            android:id="@+id/tvLAYOUTUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@id/userprofilepic"
+            android:text="Name"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/tvLAYOUTEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLAYOUTUserName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="25sp"
+            android:layout_toRightOf="@id/userprofilepic"
+            android:text="Email@Email.com"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/addtoshortlisticon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@id/userprofilepic"
+            android:layout_below="@id/tvLAYOUTEmail"
+            android:src="@drawable/add_to_shortlist_icon" />
+
+        <ImageView
+            android:id="@+id/deleteicon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@id/addtoshortlisticon"
+            android:layout_below="@id/tvLAYOUTEmail"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+
+</LinearLayout>

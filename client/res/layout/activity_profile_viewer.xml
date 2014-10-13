@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainview"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageView
+	android:id="@+id/profilepic" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:adjustViewBounds="true" 
+	android:maxWidth="150dp"  
+	android:maxHeight="150dp"  
+	android:scaleType="fitCenter"
+	android:layout_alignParentTop="true"
+	android:layout_alignParentLeft="true"  
+	style="@style/CustomViewFrameSquare"
+	android:src="@drawable/default_profile_pic"/>
+<TextView
+	android:id="@+id/status"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Status"
+	android:layout_below="@+id/profilepic"
+	android:layout_alignParentLeft="true" />
+<TextView
+	android:id="@+id/summary"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Summary"
+	android:layout_below="@+id/status"
+	android:layout_alignParentLeft="true" />
+<TextView
+	android:id="@+id/lastname"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Last Name"
+	android:layout_below="@+id/firstName"
+	android:layout_toRightOf="@+id/profilepic" />
+<TextView
+	android:id="@+id/firstName"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="First Name"
+	android:layout_alignParentTop="true"
+	android:layout_toRightOf="@+id/profilepic"/>
+
+
+<ScrollView
+    android:id="@+id/optionslistscrollview"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_below="@id/summary">
+	
+		<LinearLayout
+		    android:id="@+id/optionslistlinearlayout"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:orientation="vertical">
+			
+				<LinearLayout
+				    android:id="@+id/addnotesbutton"
+				    android:layout_width="fill_parent"
+				    style="@style/CustomScrollListElementBackgroundStyle"
+					android:layout_height="wrap_content">
+				    <ImageView
+				        android:src= "@drawable/add_note_icon"
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:adjustViewBounds="true"  
+						android:maxWidth="75dp"  
+						android:maxHeight="75dp"  
+						android:scaleType="fitCenter"  />
+				    <TextView 
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:text="Add Notes"
+				        />
+				</LinearLayout>
+				
+				<LinearLayout
+				    android:id="@+id/addtoconnectionssbutton"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				    style="@style/CustomScrollListElementBackgroundStyle">
+				    <ImageView
+				        android:src= "@drawable/add_to_connections_icon"
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:adjustViewBounds="true"  
+						android:maxWidth="75dp"  
+						android:maxHeight="75dp"  
+						android:scaleType="fitCenter"  />
+				    <TextView 
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:text="Add To Connections"
+				        />
+				</LinearLayout>
+				
+				<LinearLayout
+				    android:id="@+id/addshortlistbutton"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				    style="@style/CustomScrollListElementBackgroundStyle">
+				    <ImageView
+				        android:src= "@drawable/add_to_shortlist_icon"
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:adjustViewBounds="true"  
+						android:maxWidth="75dp"  
+						android:maxHeight="75dp"  
+						android:scaleType="fitCenter"  />
+				    <TextView 
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:text="Add To Short List"
+				        />
+				</LinearLayout>
+				
+				<LinearLayout
+				    android:id="@+id/sendcontactcardbutton"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				    style="@style/CustomScrollListElementBackgroundStyle">
+				    <ImageView
+				        android:src= "@drawable/send_contact_card_icon"
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:adjustViewBounds="true"  
+						android:maxWidth="75dp"  
+						android:maxHeight="75dp"  
+						android:scaleType="fitCenter"  />
+				    <TextView 
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:text="Send Contact Card"
+				        />
+				</LinearLayout>
+				
+				<LinearLayout
+				    android:id="@+id/invitetonetworkdbutton"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				    style="@style/CustomScrollListElementBackgroundStyle">
+				    <ImageView
+				        android:src= "@drawable/invite_to_networkd_icon"
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:adjustViewBounds="true"  
+						android:maxWidth="75dp"  
+						android:maxHeight="75dp"  
+						android:scaleType="fitCenter"  />
+				    <TextView 
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:text="Invite to Networkd"
+				        />
+				</LinearLayout>
+				
+				<LinearLayout
+				    android:id="@+id/viewlinkedinbutton"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				    style="@style/CustomScrollListElementBackgroundStyle">
+				    <ImageView
+				        android:src= "@drawable/open_linkedin_profile_icon"
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:adjustViewBounds="true"  
+						android:maxWidth="75dp"  
+						android:maxHeight="75dp"  
+						android:scaleType="fitCenter"  />
+				    <TextView 
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:text="Linkedin Profile"
+				        />
+				</LinearLayout>
+				
+				<LinearLayout
+				    android:id="@+id/messagebutton"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				    style="@style/CustomScrollListElementBackgroundStyle">
+				    <ImageView
+				        android:src= "@drawable/messaging_icon"
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:adjustViewBounds="true"  
+						android:maxWidth="75dp"  
+						android:maxHeight="75dp"  
+						android:scaleType="fitCenter"  />
+				    <TextView 
+				        android:layout_width="wrap_content"  
+				  		android:layout_height="wrap_content"
+				  		android:text="Chat"
+				        />
+				</LinearLayout>
+		</LinearLayout>
+</ScrollView>
+</RelativeLayout>

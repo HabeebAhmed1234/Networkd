@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.networkd"
+    android:versionCode="7"
+    android:versionName="1.5" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="Networkd"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="services.NetworkdService"
+            android:enabled="true" />
+
+        <activity
+            android:name="homepage.MainActivity"
+            android:label="Networkd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="findlocalusers.FindLocalUsersActivity"
+            android:label="@string/title_activity_find_local_users"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.networkd.CustomActivity"
+            android:label="@string/title_activity_custom"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="authentication.AuthenticateActivity"
+            android:label="Networkd"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="litestcalback"
+                    android:scheme="x-oauthflow-linkedin" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="profileviewer.ProfileViewerActivity"
+            android:label="@string/title_activity_profile_viewer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="notes.NoteManagerActivity"
+            android:label="@string/title_activity_add_note"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="shortlist.ShortListManagerActivity"
+            android:label="@string/title_activity_short_list_manager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="linkedinconnections.ConnectionsManagerActivity"
+            android:label="@string/title_activity_connections_manager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="messaging.ConversationManagerActivity"
+            android:label="@string/title_activity_conversation_manager" >
+        </activity>
+        <activity
+            android:name="messaging.MessagingManagerActivity"
+            android:label="@string/title_activity_messaging_manager" >
+        </activity>
+        <activity
+            android:name="contacts.ContactCardManagerActivity"
+            android:label="@string/title_activity_contact_card_manager" >
+        </activity>
+        <activity
+            android:name="settings.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.networkd.ContactCardsInventoryActivity"
+            android:label="@string/title_activity_contact_cards_inventory" >
+        </activity>
+    </application>
+
+</manifest>

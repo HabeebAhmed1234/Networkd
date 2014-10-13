@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthenticateActivity" >
+
+    <TextView
+        android:id = "@+id/welcomelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Welcome to Networkd!" />
+    
+    <TextView
+        android:id = "@+id/enteremaillabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcomelabel"
+        android:text="Please enter email to regsiter" />
+    
+    <EditText
+        android:id="@+id/enteremailedittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/enteremaillabel"/>
+    
+    <Button
+	    android:id="@+id/emailsubmitbutton"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@+id/enteremailedittext"
+	    android:text="submit"/>
+    
+    <Button
+	    android:id="@+id/loginbutton"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_above="@+id/registerbutton"
+	    android:text="Login"/>
+	
+    <Button
+	   android:id="@+id/registerbutton"
+	   android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	   android:layout_centerHorizontal="true"
+	   android:layout_alignParentBottom="true"
+	   android:text="Register"/>
+    
+</RelativeLayout>

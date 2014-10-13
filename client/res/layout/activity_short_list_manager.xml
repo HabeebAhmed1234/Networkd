@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindLocalUsersActivity" >
+    
+    <RelativeLayout
+        android:id = "@+id/searchexpander"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+       	 	android:id = "@+id/searchexpanderbutton"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+	        android:src= "@drawable/search_expander_icon"
+	  		android:adjustViewBounds="true"  
+			android:maxWidth="40dp"  
+			android:maxHeight="40dp"  
+			android:scaleType="fitCenter"
+        	/>    
+        
+	    <LinearLayout
+	        android:id = "@+id/searchbox" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/searchexpanderbutton"
+		    android:layout_margin="5sp"
+		    android:visibility="invisible"
+	        android:orientation="vertical">
+	        
+		    <EditText
+		        android:id="@+id/searchinput"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+    			android:imeOptions="actionDone"
+    			android:singleLine="true"
+		        android:ems="10" > 
+		        <requestFocus />
+		    </EditText>
+		     
+		    <Button 
+		        android:id="@+id/submitsearchbutton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:text="submit"/>
+		    
+	    </LinearLayout>
+	</RelativeLayout>
+	
+    
+    
+    <ListView
+        android:id="@+id/userList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchexpander" >
+    	</ListView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindLocalUsersActivity" >
+    
+    <RelativeLayout
+        android:id = "@+id/searchexpander"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+       	 	android:id = "@+id/searchexpanderbutton"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+	        android:src= "@drawable/search_expander_icon"
+	  		android:adjustViewBounds="true"  
+			android:maxWidth="40dp"  
+			android:maxHeight="40dp"  
+			android:scaleType="fitCenter"
+        	/>    
+        
+	    <LinearLayout
+	        android:id = "@+id/searchbox" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/searchexpanderbutton"
+		    android:layout_margin="10sp"
+		    android:visibility="invisible"
+	        android:orientation="vertical">
+	        
+		    <TextView
+		        android:id="@+id/rangetext"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Range 50 km" />
+		    
+		     <SeekBar 
+		        android:id="@+id/rangeinput" 
+		        android:max="1000" 
+		        android:progress="50"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content" 
+		        android:layout_weight="3"/> 
+		     
+		    <Button 
+		        android:id="@+id/submitrangebutton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:text="submit"/>
+		    
+	    </LinearLayout>
+	</RelativeLayout>
+    
+    <ListView
+        android:id="@+id/userList"
+        android:layout_below="@id/searchexpander"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+    </ListView>
+
+</RelativeLayout>

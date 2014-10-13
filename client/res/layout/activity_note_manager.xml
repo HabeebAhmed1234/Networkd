@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity" >
+
+    <TextView
+        android:id="@+id/addnotelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Add Note" />
+    
+	<EditText
+	    android:id="@+id/noteedittext"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/addnotelabel" />
+	
+	<Button
+	    android:id="@+id/addnotebutton"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/noteedittext"
+	    android:text="Add Note"/>
+	
+	<ListView
+	    android:id="@+id/noteList"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/deletenotebutton"
+	    android:layout_below="@id/addnotebutton" >
+
+    </ListView>
+    
+    <Button 
+	    android:id="@+id/deletenotesbutton"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+	    android:text="Delete Selected"/>
+    
+</RelativeLayout>

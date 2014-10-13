@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+		<TextView 
+		    android:id = "@+id/settingstitletext"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Settings"
+		    />
+		
+		<ToggleButton 
+		    android:id="@+id/servicetogglebutton"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textOn="Broadcast Location On"
+		    android:textOff="Broadcast Location Off"/>
+		
+		<TextView 
+		    android:id = "@+id/profiletitletext"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20sp"
+		    android:text="Contact Card"
+		    />
+		
+		<EditText
+		    android:id = "@+id/jobtitleedittext" 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Job Title"
+		    />
+		
+		<EditText
+		    android:id = "@+id/contactcardsummaryedittext" 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Summary"
+		    />
+		
+		<EditText
+		    android:id = "@+id/contactcardskilleditstext"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Skills"
+		    />
+		
+		<EditText
+		    android:id = "@+id/contactcardnotesedittext"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Extra Notes"
+		    />
+		
+		<Button
+		    android:id = "@+id/savebutton"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Save"
+		    />
+		
+		<LinearLayout
+		    android:id="@+id/logoutbutton"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+		    style="@style/CustomScrollListElementBackgroundStyle">
+		    <ImageView
+		        android:src= "@drawable/logout_icon"
+		        android:layout_width="wrap_content"  
+		  		android:layout_height="wrap_content"
+		  		android:adjustViewBounds="true"  
+				android:maxWidth="50dp"  
+				android:maxHeight="50dp"  
+				android:scaleType="fitCenter"  />
+		    <TextView 
+		        android:layout_width="wrap_content"  
+		  		android:layout_height="wrap_content"
+		  		android:text="Logout"
+		        />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

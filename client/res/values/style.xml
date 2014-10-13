@@ -1,0 +1,30 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <style name="AppBaseTheme" parent="android:Theme.Light">
+   </style>
+
+   <!-- Application theme. -->
+   <style name="AppTheme" parent="AppBaseTheme">
+      <item name="android:typeface">normal</item>
+      <item name="android:textColor">@color/Black</item>/> 
+      <item name="android:layout_margin" >3dp</item>
+      <item name="android:textSize" >7pt</item>
+   </style>
+   
+   <style name = "CustomMainBackgroundStyle">
+       <item name = "android:background">@color/White</item>
+   </style>
+   
+   <style name = "CustomScrollListElementBackgroundStyle">
+       <item name = "android:background">@drawable/customborder</item>
+   </style>
+   
+   <style name = "CustomViewFrameSquare">
+       <item name = "android:background">@drawable/customborder2</item>
+   </style>
+   
+   <style name = "CustomViewFrameRounded">
+       <item name = "android:background">@drawable/customborder</item>
+   </style>
+   
+</resources>
